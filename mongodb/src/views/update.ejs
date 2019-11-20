@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm ">
+        <ul class="navbar-nav">
+                <%for(var i=0;i<nav.length;i++){%>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="<%=nav[i].link%>"><%=nav[i].title%></a>
+                        </li>
+                        <%}%>
+
+               
+
+        </ul>
+    </nav>
+    <div class="jumbotron jumbotron-fluid " id="div1">
+            <div class="container row" id="div2">
+              <h1 class=" col-lg-8 col-sm-8" id="h1">
+              <b>Update</b></h1>
+              <div class="col-lg-4 col-sm-4 " id="div3">
+        
+              </div>
+            </div>
+          </div>
+          <div class="container form-inline" id="div5">
+            <form action="/save" name="save" id="form" method="POST">
+          
+              <div class="form-group">
+              <label><b>Adm No :</b></label><br><br>
+              <input type="text" name="adm" id="adm">
+              </div>
+             
+              <button type="submit" class="btn btn-primary">edit</button>
+              <button type="submit" class="btn btn-primary">delete</button>
+
+              
+            </div>
+          </form>
+          </div>
+        
+          </div>
+        
+</body>
+</html>
